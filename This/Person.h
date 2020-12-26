@@ -9,8 +9,8 @@ private:
 	int age;
 
 public:
-	Person();
-	Person(std::string name, int age);
+	Person(): name(""), age(0) {};
+	Person(std::string name, int age) : name(name), age(age) {};
 
 	std::string toString();
 };
